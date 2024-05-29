@@ -3,7 +3,7 @@ spring:
     producer:
       bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.JsonSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.type.mapping: orderConfirmationDto:dev.lxqtpr.linda.orderservice.kafka.dto.OrderConfirmationDto
   datasource:
@@ -21,4 +21,4 @@ application:
   config:
     customerUrl: http://localhost:8090/api/v1/customers
     productUrl: http://localhost:8050/api/v1/products
-    paymentUrl: http://localhost:8020/api/v1/payments
+    paymentUrl: http://localhost:8030/api/v1/payments

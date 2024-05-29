@@ -4,7 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b73d680-2467-4656-9fe5-0424f0eb72d1" name="Changes" comment="" />
+    <list default="true" id="2b73d680-2467-4656-9fe5-0424f0eb72d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/payment-service/payment-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/clients/PaymentClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/payments/CreatePaymentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/payments/ResponsePaymentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/configs/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/controllers/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/CreatePaymentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/PaymentNotificationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/ResponseCustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/ResponsePaymentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/customer/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/customer/ResponseCustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/exceptions/CustomControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/exceptions/ExceptionBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/exceptions/ValidationErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/exceptions/Violation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/kafka/notification/NotificationProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/models/PaymentEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/models/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/repositories/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/services/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/resources/db/migration/V1__create_payment_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74c31a38e6e680bae518097e5aa3bd01ec70431d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74c31a38e6e680bae518097e5aa3bd01ec70431d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7e9ae1464d726565193e17dd40302322d39053b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7e9ae1464d726565193e17dd40302322d39053b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/configs/order-service/order-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/order-service/order-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/services/OrderService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +62,13 @@
     <projectState path="$PROJECT_DIR$/gateway-service">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/notification-service">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/order-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/payment-service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/product-service">
@@ -49,13 +94,29 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.JpaEntity" />
-        <option value="Enum" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Enum" />
+        <option value="com.intellij.jpb.JpaRepository" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lxqtpr"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:lxqtpr/LindaEcomMicroservice.git",
+    "accountId": "b7aee0b6-4dbb-4ad9-a304-78fd65baa496"
+  }
+}]]></component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -67,6 +128,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2gzw0lTsvBdaZt7RhuUHXKWdnNg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -75,34 +139,43 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yml.kafka-ui: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.order-service-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.payment-service-db: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.pgadmin: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.postgresql: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.product-service-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.zookeeper: Compose Deployment.executor": "Run",
     "Gradle.Build config-service.executor": "Run",
     "Gradle.Build customer-service.executor": "Run",
     "Gradle.Build discovery-service.executor": "Run",
     "Gradle.Build gateway-service.executor": "Run",
     "Gradle.Build order-service.executor": "Run",
+    "Gradle.Build payment-service.executor": "Run",
     "Gradle.Build product-service.executor": "Run",
     "Gradle.Build test-service.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ConfigServiceApplication.executor": "Run",
     "Spring Boot.CustomerServiceApplication.executor": "Run",
     "Spring Boot.DiscoveryServiceApplication.executor": "Run",
     "Spring Boot.GatewayServiceApplication.executor": "Run",
     "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.PaymentServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
     "Spring Boot.TestServiceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lxqtp/Desktop/LindaEcommerceMicroservice/order-service/src/main/java/dev/lxqtpr/linda/orderservice",
+    "last_opened_file_path": "C:/Users/lxqtp/Desktop/LindaEcommerceMicroservice/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -123,13 +196,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dev.lxqtpr.linda.paymentservice.dto" />
+      <recent name="dev.lxqtpr.linda.paymentservice.services" />
+      <recent name="dev.lxqtpr.linda.orderservice.kafka.dto" />
       <recent name="dev.lxqtpr.linda.orderservice.repositories" />
       <recent name="dev.lxqtpr.linda.productservice.exceptions" />
-      <recent name="dev.lxqtpr.linda.orderservice.clients" />
-      <recent name="dev.lxqtpr.linda.orderservice.dto" />
-      <recent name="dev.lxqtpr.linda.productservice.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\payment-service\src\main\java\dev\lxqtpr\linda\paymentservice" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\order-service\src\main\java\dev\lxqtpr\linda\orderservice" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\order-service\src\main" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\customer-service\src\main\java\dev\lxqtpr\linda\customerservice\exceptions" />
@@ -142,6 +216,9 @@
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\config-service\src\main\resources\configs\product-service" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\config-service\src\main\resources\condifs" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.lxqtpr.linda.paymentservice.dto.customer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -152,7 +229,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+  <component name="RunManager" selected="Spring Boot.PaymentServiceApplication">
     <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.lxqtpr.linda.configservice.ConfigServiceApplication" />
@@ -203,10 +280,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="notification-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.lxqtpr.linda.notificationservice.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="order-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.lxqtpr.linda.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="payment-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.lxqtpr.linda.paymentservice.PaymentServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,6 +317,32 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.kafka-ui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka-ui" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -237,12 +356,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.order-service-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.payment-service-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="order-service-db" />
+              <option value="payment-service-db" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -250,38 +369,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.pgadmin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.zookeeper: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="pgadmin" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.postgresql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="postgresql" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.product-service-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="product-service-db" />
+              <option value="zookeeper" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -290,11 +383,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.order-service-db: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.product-service-db: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.postgresql: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.payment-service-db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
+      <item itemvalue="Spring Boot.NotificationServiceApplication" />
+      <item itemvalue="Spring Boot.PaymentServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServiceApplication" />
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
@@ -304,11 +399,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.payment-service-db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.order-service-db: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.product-service-db: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.postgresql: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +432,7 @@
       <workItem from="1716883999733" duration="49000" />
       <workItem from="1716884472835" duration="525000" />
       <workItem from="1716885022366" duration="27285000" />
-      <workItem from="1716985637101" duration="9541000" />
+      <workItem from="1716985637101" duration="19554000" />
     </task>
     <servers />
   </component>

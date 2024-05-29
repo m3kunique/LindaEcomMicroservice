@@ -24,6 +24,19 @@ services:
       - "5431:5432"
     restart: unless-stopped
 
+  payment-service-db:
+    container_name: payment-service-db
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: payments
+    volumes:
+      - order-service-db:/data/postgres
+    ports:
+      - "5430:5432"
+    restart: unless-stopped
+
   pgadmin:
     container_name: ms_pgadmin
     image: dpage/pgadmin4

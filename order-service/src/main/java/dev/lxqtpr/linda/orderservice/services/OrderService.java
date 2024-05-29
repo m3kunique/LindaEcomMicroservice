@@ -1,5 +1,8 @@
 package dev.lxqtpr.linda.orderservice.services;
 
+import dev.lxqtpr.linda.orderservice.clients.PaymentClient;
+import dev.lxqtpr.linda.orderservice.dto.payments.CreatePaymentDto;
+import dev.lxqtpr.linda.orderservice.dto.products.CreatePurchaseDto;
 import dev.lxqtpr.linda.orderservice.exceptions.ResourceNotFoundException;
 import dev.lxqtpr.linda.orderservice.kafka.dto.OrderConfirmationDto;
 import dev.lxqtpr.linda.orderservice.kafka.producers.OrderProducer;
@@ -28,6 +31,7 @@ public class OrderService {
     private final ModelMapper modelMapper;
     private final OrderLineRepository orderLineRepository;
     private final OrderProducer orderProducer;
+    private final PaymentClient paymentClient;
 
     public ResponseOrderDto createOrder(CreateOrderDto createOrderDto) {
         var customer = customerClient.findCustomerById(createOrderDto.getCustomerId());
@@ -50,7 +54,17 @@ public class OrderService {
                 .build();
         orderProducer.sendOrderConfirmation(messageToKafka);
 
-        return modelMapper.map(orderRepository.save(orderToSave), ResponseOrderDto.class);
+        var savedOrder = orderRepository.save(orderToSave);
+        var createPaymentDto = CreatePaymentDto.builder()
+                .customerDto(customer)
+                .amount(createOrderDto.getTotalAmount())
+                .paymentMethod(createOrderDto.getPaymentMethod())
+                .orderReference(createOrderDto.getReference())
+                .orderId(savedOrder.getId()).build();
+
+        paymentClient.createPayment(createPaymentDto);
+
+        return modelMapper.map(savedOrder, ResponseOrderDto.class);
     }
 
     public List<ResponseOrderDto> findAllOrders() {
