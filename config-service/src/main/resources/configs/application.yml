@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/api/v1/eureka/
+server:
+  servlet:
+    contextPath: /api/v1
