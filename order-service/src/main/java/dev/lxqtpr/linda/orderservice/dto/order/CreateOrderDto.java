@@ -15,6 +15,7 @@ import java.util.List;
 
 @Data
 public class CreateOrderDto {
+    @NotBlank(message = "Order reference be present")
     private String reference;
 
     @Positive(message = "Order amount should be positive")
@@ -23,8 +24,6 @@ public class CreateOrderDto {
     @NotNull(message = "Payment method should be precised")
     private PaymentMethod paymentMethod;
 
-    @NotNull(message = "Customer should be present")
-    @NotEmpty(message = "Customer should be present")
     @NotBlank(message = "Customer should be present")
     private String customerId;
 

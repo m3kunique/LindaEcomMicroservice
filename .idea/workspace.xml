@@ -5,7 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b73d680-2467-4656-9fe5-0424f0eb72d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/exceptions/CustomerAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/configs/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/configs/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/configs/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LindaEcommerceMicroservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LindaEcommerceMicroservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/249af2d7-e304-44ec-ab2a-db318b1c168c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/249af2d7-e304-44ec-ab2a-db318b1c168c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/83e856af-b4b4-4fe4-ad84-7f34dc1ba538.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/83e856af-b4b4-4fe4-ad84-7f34dc1ba538.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13a8c3691c761e0011daf02f8f16d2a7fe3f7663" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13a8c3691c761e0011daf02f8f16d2a7fe3f7663" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/159bb7b0018b8df3cb1c1c78dd713ad853a67df4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/159bb7b0018b8df3cb1c1c78dd713ad853a67df4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4fd01022616c5e082fcc345b1ba4f3aa554a21c2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/6901d2861e6109ca2289c4916b10572bc2467715" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/692a3dfabd0ed02d8e84068ec761f722c898a79e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/692a3dfabd0ed02d8e84068ec761f722c898a79e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74c31a38e6e680bae518097e5aa3bd01ec70431d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74c31a38e6e680bae518097e5aa3bd01ec70431d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/8677f74800c6939428a4cefb4a41a92e04237588" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/8677f74800c6939428a4cefb4a41a92e04237588" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c32588ef097ebf085c21d87bb5a81bfef5a5b8f8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c32588ef097ebf085c21d87bb5a81bfef5a5b8f8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdf49b8f09b1e08c45df5131baa269d10bab503b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdf49b8f09b1e08c45df5131baa269d10bab503b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d26a1da4f9f8522c4057e66c0c21919c6a5bbadd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d26a1da4f9f8522c4057e66c0c21919c6a5bbadd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7e9ae1464d726565193e17dd40302322d39053b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7e9ae1464d726565193e17dd40302322d39053b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4fd01022616c5e082fcc345b1ba4f3aa554a21c2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/9/6901d2861e6109ca2289c4916b10572bc2467715" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/configs/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/configs/gateway-service/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/gateway-service/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/configs/notification-service/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/notification-service/notification-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/configs/order-service/order-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/order-service/order-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/configs/payment-service/payment-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/configs/payment-service/payment-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/controllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/dto/CreateCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/dto/CreateCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/dto/ResponseCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/dto/ResponseCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/dto/UpdateCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/dto/UpdateCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/exceptions/CustomControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/exceptions/CustomControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/models/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/models/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/models/CustomerEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/repositories/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/repositories/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/NotificationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/NotificationConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/orders/ResponseCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/orders/ResponseCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/orders/ResponseProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/orders/ResponseProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/services/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/services/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/templates/order-confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/templates/order-confirmation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/clients/PaymentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/clients/PaymentClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/customers/ResponseCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/customers/ResponseCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/order/CreateOrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/order/CreateOrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/products/ResponseProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/dto/products/ResponseProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/exceptions/CustomControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/exceptions/CustomControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/kafka/producers/OrderProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/kafka/producers/OrderProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/models/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/models/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/dev/lxqtpr/linda/orderservice/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/db/migration/V1__create_order_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/db/migration/V1__create_order_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/ResponseCustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/dto/ResponseCustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/kafka/notification/NotificationProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/kafka/notification/NotificationProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/services/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice/services/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/db/migration/V1__create_payment_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/db/migration/V1__create_payment_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/dto/categories/CreateCategoryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/dto/categories/UpdateCategoryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/dto/products/CreateProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/dto/products/CreateProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/dto/products/ResponseProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/dto/products/ResponseProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/exceptions/CustomControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/exceptions/CustomControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/dev/lxqtpr/linda/productservice/services/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +130,9 @@
       <list>
         <option value="com.intellij.jpb.JpaEntity" />
         <option value="package-info" />
-        <option value="Enum" />
         <option value="com.intellij.jpb.JpaRepository" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -87,6 +159,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="LLMProjectSettings">
+    <option name="aiignore_manually_set" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -100,70 +175,79 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml.kafka-ui: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.kafka: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.order-service-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.payment-service-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.pgadmin: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.postgresql: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.product-service-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml.zookeeper: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build config-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build customer-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build discovery-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build gateway-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build order-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build payment-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build product-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build test-service.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CustomerServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TestServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lxqtp/Desktop/LindaEcommerceMicroservice/payment-service/src/main/java/dev/lxqtpr/linda/paymentservice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.kafka-ui: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.kafka: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.mongodb: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.order-service-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.payment-service-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.pgadmin: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.postgresql: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.product-service-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.zipkin: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.zookeeper: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment (1).executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Gradle.Build config-service.executor": "Run",
+    "Gradle.Build customer-service.executor": "Run",
+    "Gradle.Build discovery-service.executor": "Run",
+    "Gradle.Build gateway-service.executor": "Run",
+    "Gradle.Build notification-service.executor": "Run",
+    "Gradle.Build order-service.executor": "Run",
+    "Gradle.Build payment-service.executor": "Run",
+    "Gradle.Build product-service.executor": "Run",
+    "Gradle.Build test-service.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServiceApplication.executor": "Run",
+    "Spring Boot.CustomerServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.GatewayServiceApplication.executor": "Run",
+    "Spring Boot.NotificationServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.PaymentServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.TestServiceApplication.executor": "Run",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lxqtp/Desktop/LindaEcommerceMicroservice/config-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dev.lxqtpr.linda.customerservice.exceptions" />
+      <recent name="dev.lxqtpr.linda.notificationservice.kafka.orders" />
+      <recent name="dev.lxqtpr.linda.notificationservice.models" />
       <recent name="dev.lxqtpr.linda.paymentservice.dto" />
       <recent name="dev.lxqtpr.linda.paymentservice.services" />
-      <recent name="dev.lxqtpr.linda.orderservice.kafka.dto" />
-      <recent name="dev.lxqtpr.linda.orderservice.repositories" />
-      <recent name="dev.lxqtpr.linda.productservice.exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\payment-service\src\main\java\dev\lxqtpr\linda\paymentservice" />
@@ -173,11 +257,11 @@
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\product-service\src\main\java\dev\lxqtpr\linda\productservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\order-service\src\main\resources\db\migration" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\order-service\src\main\resources" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\product-service\src\main\java\dev\lxqtpr\linda\productservice\models" />
       <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\config-service\src\main\resources\configs\product-service" />
-      <recent name="C:\Users\lxqtp\Desktop\LindaEcommerceMicroservice\config-service\src\main\resources\condifs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dev.lxqtpr.linda.paymentservice.dto.customer" />
@@ -192,7 +276,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaymentServiceApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment (1)">
     <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-service.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.lxqtpr.linda.configservice.ConfigServiceApplication" />
@@ -280,38 +364,29 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment (1)" type="docker-deploy" factoryName="docker-compose.yml" singleton="false" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.kafka-ui: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
               <option value="kafka-ui" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.kafka: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="kafka" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="mongodb" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -332,12 +407,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.zookeeper: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="zookeeper" />
+              <option value="zipkin" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -346,11 +421,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
+      <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.payment-service-db: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
       <item itemvalue="Spring Boot.NotificationServiceApplication" />
       <item itemvalue="Spring Boot.PaymentServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
@@ -358,24 +434,22 @@
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-      <item itemvalue="Spring Boot.GatewayServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.payment-service-db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka-ui: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
-        <option value="jdk-21.0.1-openjdk-21.0.1-5b172459f563-8f8caaaa" />
+        <option value="bundled-jdk-9823dce3aa75-524037c5f8d1-intellij.indexing.shared.core-IU-242.12881.66" />
+        <option value="bundled-js-predefined-d6986cc7102b-433cfb1f11c8-JavaScript-IU-242.12881.66" />
       </set>
     </attachedChunks>
   </component>
@@ -398,21 +472,56 @@
       <workItem from="1716985637101" duration="19554000" />
       <workItem from="1717021013941" duration="117000" />
       <workItem from="1717024106716" duration="29000" />
+      <workItem from="1717062507752" duration="7741000" />
+      <workItem from="1717079305183" duration="4793000" />
+      <workItem from="1717097807899" duration="662000" />
+      <workItem from="1717104935779" duration="106000" />
+      <workItem from="1717105270211" duration="1399000" />
+      <workItem from="1717106863140" duration="2935000" />
+      <workItem from="1717161355355" duration="8609000" />
+      <workItem from="1717185384430" duration="426000" />
+      <workItem from="1717185833446" duration="405000" />
+      <workItem from="1717186254015" duration="202000" />
+      <workItem from="1717186469167" duration="704000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="WfRunsListSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "branch": "main",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "main",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "main",
+      "currentBranchFilter": true
+    }
+  ],
+  "lastFilter": {
+    "branch": "main",
+    "currentBranchFilter": true
+  }
+}]]></component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/customer-service/src/main/java/dev/lxqtpr/linda/customerservice/services/CustomerService.java</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/notification-service/src/main/java/dev/lxqtpr/linda/notificationservice/kafka/NotificationConsumer.java</url>
+          <line>27</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

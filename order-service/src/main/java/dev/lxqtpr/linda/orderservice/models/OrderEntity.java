@@ -9,10 +9,10 @@ import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
+import dev.lxqtpr.linda.orderservice.models.OrderLineEntity;
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -37,7 +37,7 @@ public class OrderEntity {
     private String customerId;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.REMOVE)
-    private List<OrderLineEntity> orderLines;
+    private List<OrderLineEntity> orderLines = new ArrayList<>();
 
     @CreatedDate
     @Column(updatable = false, nullable = false)
@@ -47,4 +47,8 @@ public class OrderEntity {
     @Column(insertable = false, nullable = false)
     private LocalDateTime lastModifiedDate;
 
+    public void addOrderLine(OrderLineEntity orderLineEntity){
+        orderLines.add(orderLineEntity);
+        orderLineEntity.setOrder(this);
+    }
 }

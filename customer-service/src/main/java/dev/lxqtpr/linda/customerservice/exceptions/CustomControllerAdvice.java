@@ -15,6 +15,13 @@ public class CustomControllerAdvice {
     public ExceptionBody handleResourceNotFound(ResourceNotFoundException e) {
         return new ExceptionBody(e.getMessage(), HttpStatus.NOT_FOUND.value());
     }
+
+    @ExceptionHandler(CustomerAlreadyExistException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ExceptionBody handleCustomerAlreadyExistException(CustomerAlreadyExistException e) {
+        return new ExceptionBody(e.getMessage(), HttpStatus.NOT_FOUND.value());
+    }
+
     @ExceptionHandler(ConstraintViolationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ValidationErrorResponse onConstraintValidationException(

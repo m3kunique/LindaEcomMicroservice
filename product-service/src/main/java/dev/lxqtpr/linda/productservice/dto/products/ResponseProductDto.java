@@ -12,5 +12,5 @@ public class ResponseProductDto {
     private String description;
     private Double availableQuantity;
     private BigDecimal price;
-    private ResponseCategoryDto responseCategoryDto;
+    private ResponseCategoryDto category;
 }

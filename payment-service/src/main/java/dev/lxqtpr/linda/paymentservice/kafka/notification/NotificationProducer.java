@@ -15,10 +15,10 @@ public class NotificationProducer {
 
     private final KafkaTemplate<String, PaymentNotificationDto> kafkaTemplate;
 
-    public void sendNotification(PaymentNotificationDto paymentNotificationDto){
-        log.info("Sending notification with body <{}>", paymentNotificationDto);
+    public void sendNotification(PaymentNotificationDto paymentNotification){
+        log.info("Sending notification with body <{}>", paymentNotification);
         var message = MessageBuilder
-                .withPayload(paymentNotificationDto)
+                .withPayload(paymentNotification)
                 .setHeader(KafkaHeaders.TOPIC, "payment-topic")
                 .build();
         kafkaTemplate.send(message);

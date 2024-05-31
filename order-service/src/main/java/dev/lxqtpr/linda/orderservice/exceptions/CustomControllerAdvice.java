@@ -47,6 +47,7 @@ public class CustomControllerAdvice {
         return new ValidationErrorResponse(HttpStatus.BAD_REQUEST.value(), violations);
     }
     @ExceptionHandler(FeignException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public JsonNode handleFeignStatusException(FeignException e) throws JsonProcessingException {
         return new ObjectMapper().readTree(e.contentUTF8());
     }

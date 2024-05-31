@@ -19,7 +19,6 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 
 @Service
@@ -35,14 +34,16 @@ public class OrderService {
 
     public ResponseOrderDto createOrder(CreateOrderDto createOrderDto) {
         var customer = customerClient.findCustomerById(createOrderDto.getCustomerId());
-        var purchasedProducts = productClient.purchaseProducts(createOrderDto.getPurchaseProducts());
-        var orderToSave = modelMapper.map(createOrderDto, OrderEntity.class);
+        var purchasedProducts = productClient
+                .purchaseProducts(createOrderDto.getPurchaseProducts());
+        var savedOrder = orderRepository.save(modelMapper.map(createOrderDto, OrderEntity.class));
 
         createOrderDto.getPurchaseProducts()
                 .forEach(product -> {
                     var orderLineToSave = modelMapper.map(product, OrderLineEntity.class);
-                    orderLineToSave.setOrder(orderToSave);
-                    orderLineRepository.save(orderLineToSave);
+                    orderLineToSave.setOrder(savedOrder);
+                    var savedOrderLine = orderLineRepository.save(orderLineToSave);
+                    savedOrder.addOrderLine(savedOrderLine);
                 });
 
         var messageToKafka = OrderConfirmationDto.builder()
@@ -54,7 +55,7 @@ public class OrderService {
                 .build();
         orderProducer.sendOrderConfirmation(messageToKafka);
 
-        var savedOrder = orderRepository.save(orderToSave);
+
         var createPaymentDto = CreatePaymentDto.builder()
                 .customerDto(customer)
                 .amount(createOrderDto.getTotalAmount())

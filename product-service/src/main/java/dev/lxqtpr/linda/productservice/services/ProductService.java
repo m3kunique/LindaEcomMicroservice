@@ -50,7 +50,7 @@ public class ProductService {
         for (int i = 0; i < products.size(); i++ ){
             var product = products.get(i);
             var productToPurchase = productsToPurchase.get(i);
-            if (!isProductAvailableToPurchase(product,productToPurchase)){
+            if (Boolean.FALSE.equals(isProductAvailableToPurchase(product,productToPurchase))){
                 throw new ProductPurchaseException("Insufficient stock quantity for product with ID" + productToPurchase.getProductId());
             }
             var newAvailableQuantity = product.getAvailableQuantity() - productToPurchase.getQuantity();

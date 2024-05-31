@@ -15,6 +15,11 @@ public class CustomControllerAdvice {
     public ExceptionBody handleResourceNotFound(ResourceNotFoundException e) {
         return new ExceptionBody(e.getMessage(), HttpStatus.NOT_FOUND.value());
     }
+    @ExceptionHandler(ProductPurchaseException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ExceptionBody handleProductPurchaseException(ResourceNotFoundException e) {
+        return new ExceptionBody(e.getMessage(), HttpStatus.BAD_REQUEST.value());
+    }
 
     @ExceptionHandler(ConstraintViolationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)

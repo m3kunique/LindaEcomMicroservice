@@ -1,23 +1,26 @@
 package dev.lxqtpr.linda.customerservice.dto;
 
 import dev.lxqtpr.linda.customerservice.models.Address;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
 public class UpdateCustomerDto{
+        @NotBlank(message = "Customer id id required")
         private String id;
 
-        @NotNull(message = "Customer firstname is required")
-        private String firstname;
+        @NotBlank(message = "Customer firstname is required")
+        private String firstName;
 
-        @NotNull(message = "Customer firstname is required")
-        private String lastname;
+        @NotBlank(message = "Customer firstname is required")
+        private String lastName;
 
-        @NotNull(message = "Customer Email is required")
+        @NotBlank(message = "Customer Email is required")
         @Email(message = "Customer Email is not a valid email address")
         private String email;
 
+        @Valid
         private Address address;
 }

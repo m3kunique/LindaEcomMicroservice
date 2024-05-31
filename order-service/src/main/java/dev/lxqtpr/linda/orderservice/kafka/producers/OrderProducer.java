@@ -15,10 +15,10 @@ public class OrderProducer {
 
     private final KafkaTemplate<String, OrderConfirmationDto> kafkaTemplate;
 
-    public void sendOrderConfirmation(OrderConfirmationDto orderConfirmationDto){
+    public void sendOrderConfirmation(OrderConfirmationDto orderConfirmation){
         log.info("Sending order confirmation");
         var message = MessageBuilder
-                .withPayload(orderConfirmationDto)
+                .withPayload(orderConfirmation)
                 .setHeader(KafkaHeaders.TOPIC, "order-topic")
                 .build();
         kafkaTemplate.send(message);

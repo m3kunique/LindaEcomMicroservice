@@ -3,15 +3,16 @@ package dev.lxqtpr.linda.customerservice.services;
 import dev.lxqtpr.linda.customerservice.dto.CreateCustomerDto;
 import dev.lxqtpr.linda.customerservice.dto.ResponseCustomerDto;
 import dev.lxqtpr.linda.customerservice.dto.UpdateCustomerDto;
+import dev.lxqtpr.linda.customerservice.exceptions.CustomerAlreadyExistException;
 import dev.lxqtpr.linda.customerservice.exceptions.ResourceNotFoundException;
 import dev.lxqtpr.linda.customerservice.models.CustomerEntity;
 import dev.lxqtpr.linda.customerservice.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
+import org.bson.types.ObjectId;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -20,6 +21,9 @@ public class CustomerService {
     private final ModelMapper modelMapper;
 
     public ResponseCustomerDto createCustomer(CreateCustomerDto createCustomerDto) {
+        if (customerRepository.findByEmail(createCustomerDto.getEmail()).isPresent()){
+            throw new CustomerAlreadyExistException("Customer with this email already exist");
+        }
         var customerToSave = modelMapper.map(createCustomerDto, CustomerEntity.class);
         return modelMapper.map(customerRepository.save(customerToSave), ResponseCustomerDto.class);
     }

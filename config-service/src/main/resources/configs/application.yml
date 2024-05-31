@@ -7,3 +7,13 @@ eureka:
 server:
   servlet:
     contextPath: /api/v1
+
+spring:
+  cloud:
+    config:
+      override-system-properties: false
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

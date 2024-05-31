@@ -6,6 +6,7 @@ import dev.lxqtpr.linda.customerservice.dto.UpdateCustomerDto;
 import dev.lxqtpr.linda.customerservice.services.CustomerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,12 +29,12 @@ public class CustomerController {
     }
 
     @PostMapping
-    public ResponseCustomerDto createCustomer(@Valid @RequestBody CreateCustomerDto createCustomerDto) {
+    public ResponseCustomerDto createCustomer(@RequestBody @Valid CreateCustomerDto createCustomerDto) {
         return customerService.createCustomer(createCustomerDto);
     }
 
     @PutMapping
-    public ResponseCustomerDto updateCustomer(@Valid @RequestBody UpdateCustomerDto updateCustomerDto) {
+    public ResponseCustomerDto updateCustomer(@RequestBody @Valid UpdateCustomerDto updateCustomerDto) {
         return customerService.updateCustomer(updateCustomerDto);
     }
 
