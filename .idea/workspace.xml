@@ -72,12 +72,12 @@
     &quot;assignee&quot;: &quot;lxqtpr&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:lxqtpr/LindaEcomMicroservice.git&quot;,
-    &quot;accountId&quot;: &quot;b7aee0b6-4dbb-4ad9-a304-78fd65baa496&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:lxqtpr/LindaEcomMicroservice.git",
+    "accountId": "85386983-eb2a-4a2d-8135-c202bd9d6250"
   }
-}</component>
+}]]></component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -156,7 +156,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -409,7 +409,7 @@
       <workItem from="1717185384430" duration="426000" />
       <workItem from="1717185833446" duration="405000" />
       <workItem from="1717186254015" duration="202000" />
-      <workItem from="1717186469167" duration="1052000" />
+      <workItem from="1717186469167" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add zipkin support">
       <option name="closed" value="true" />
@@ -419,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717187365008</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add zipkin support">
+      <option name="closed" value="true" />
+      <created>1717187553106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717187553106</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
